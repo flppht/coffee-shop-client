@@ -26,7 +26,7 @@ const StatusOfOrder = ({ statusOfOrder, setStatusOfOrder }) => {
     if (allOrdersCompleted) {
       clearInterval(interval);
     } else {
-      interval = setInterval(updateStatus, 10000);
+      interval = setInterval(updateStatus, 5000);
     }
 
     return () => clearInterval(interval);
